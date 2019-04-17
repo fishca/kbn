@@ -1,0 +1,413 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<ButtonGroup name="ФормаГруппаПеремещениеСтатьи" id="37">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Форма группа перемещение статьи</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Форма группа перемещение статьи</v8:content>
+					</v8:item>
+				</ToolTip>
+				<ExtendedTooltip name="ФормаГруппаПеремещениеСтатьиРасширеннаяПодсказка" id="38"/>
+				<ChildItems>
+					<Button name="ПереместитьВверх" id="13">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПереместитьЭлементВверх</CommandName>
+						<ExtendedTooltip name="ПереместитьВверхРасширеннаяПодсказка" id="14"/>
+					</Button>
+					<Button name="ПереместитьВниз" id="15">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПереместитьЭлементВниз</CommandName>
+						<ExtendedTooltip name="ПереместитьВнизРасширеннаяПодсказка" id="16"/>
+					</Button>
+				</ChildItems>
+			</ButtonGroup>
+			<ButtonGroup name="ФормаГруппаБлокировкаСтатьи" id="35">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Форма группа блокировка статьи</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Форма группа блокировка статьи</v8:content>
+					</v8:item>
+				</ToolTip>
+				<ExtendedTooltip name="ФормаГруппаБлокировкаСтатьиРасширеннаяПодсказка" id="36"/>
+				<ChildItems>
+					<Button name="ЗахватитьНаРедактирование" id="33">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗахватитьНаРедактирование</CommandName>
+						<ExtendedTooltip name="ЗахватитьНаРедактированиеРасширеннаяПодсказка" id="34"/>
+					</Button>
+					<Button name="ЗавершитьРедактирование" id="31">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗавершитьРедактирование</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Освободить</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ЗавершитьРедактированиеРасширеннаяПодсказка" id="32"/>
+					</Button>
+				</ChildItems>
+			</ButtonGroup>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа пользовательских настроек</v8:content>
+				</v8:item>
+			</Title>
+			<VerticalStretch>false</VerticalStretch>
+			<Group>Vertical</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="СписокКомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="2"/>
+		</UsualGroup>
+		<Table name="Список" id="3">
+			<CommandBarLocation>None</CommandBarLocation>
+			<DefaultItem>true</DefaultItem>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<UserSettingsGroup>СписокКомпоновщикНастроекПользовательскиеНастройки</UserSettingsGroup>
+			<ContextMenu name="СписокКонтекстноеМеню" id="4">
+				<ChildItems>
+					<ButtonGroup name="КонтекстноеМенюГруппаПеремещениеСтатьи" id="39">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Контекстное меню группа перемещение статьи</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Форма группа перемещение статьи</v8:content>
+							</v8:item>
+						</ToolTip>
+						<ExtendedTooltip name="КонтекстноеМенюГруппаПеремещениеСтатьиРасширеннаяПодсказка" id="40"/>
+						<ChildItems>
+							<Button name="МенюПереместитьВверх" id="41">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ПереместитьЭлементВверх</CommandName>
+								<ExtendedTooltip name="МенюПереместитьВверхРасширеннаяПодсказка" id="42"/>
+							</Button>
+							<Button name="МенюПереместитьВниз" id="43">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ПереместитьЭлементВниз</CommandName>
+								<ExtendedTooltip name="МенюПереместитьВнизРасширеннаяПодсказка" id="44"/>
+							</Button>
+						</ChildItems>
+					</ButtonGroup>
+					<ButtonGroup name="КонтекстноеМенюГруппаБлокировкаСтатьи" id="45">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Контекстное меню группа блокировка статьи</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Форма группа блокировка статьи</v8:content>
+							</v8:item>
+						</ToolTip>
+						<ExtendedTooltip name="КонтекстноеМенюГруппаБлокировкаСтатьиРасширеннаяПодсказка" id="46"/>
+						<ChildItems>
+							<Button name="МенюЗахватитьНаРедактирование" id="47">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ЗахватитьНаРедактирование</CommandName>
+								<ExtendedTooltip name="МенюЗахватитьНаРедактированиеРасширеннаяПодсказка" id="48"/>
+							</Button>
+							<Button name="МенюЗавершитьРедактирование" id="49">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ЗавершитьРедактирование</CommandName>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Освободить</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="МенюЗавершитьРедактированиеРасширеннаяПодсказка" id="50"/>
+							</Button>
+						</ChildItems>
+					</ButtonGroup>
+				</ChildItems>
+			</ContextMenu>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="5">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="6"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="57">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="58"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="59"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="60">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="61"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="62"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="63">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="64"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="65"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="OnActivateRow">СписокПриАктивизацииСтроки</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="Наименование" id="7">
+					<DataPath>Список.Description</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="9"/>
+				</LabelField>
+				<LabelField name="ПолныйТекст" id="17">
+					<DataPath>Список.ПолныйТекст</DataPath>
+					<ContextMenu name="ПолныйТекстКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ПолныйТекстРасширеннаяПодсказка" id="19"/>
+				</LabelField>
+				<LabelField name="Редактирует" id="20">
+					<DataPath>Список.Редактор</DataPath>
+					<ContextMenu name="РедактируетКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="РедактируетРасширеннаяПодсказка" id="22"/>
+				</LabelField>
+				<LabelField name="ДатаСоздания" id="23">
+					<DataPath>Список.ДатаСоздания</DataPath>
+					<ContextMenu name="ДатаСозданияКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ДатаСозданияРасширеннаяПодсказка" id="25"/>
+				</LabelField>
+				<LabelField name="Ответственный" id="51">
+					<DataPath>Список.Ответственный</DataPath>
+					<ContextMenu name="ОтветственныйКонтекстноеМеню" id="52"/>
+					<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="53"/>
+				</LabelField>
+				<CheckBoxField name="Черновик" id="26">
+					<DataPath>Список.Черновик</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ЧерновикКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ЧерновикРасширеннаяПодсказка" id="28"/>
+				</CheckBoxField>
+				<LabelField name="ТекстHTML" id="54">
+					<DataPath>Список.ТекстHTML</DataPath>
+					<ContextMenu name="ТекстHTMLКонтекстноеМеню" id="55"/>
+					<ExtendedTooltip name="ТекстHTMLРасширеннаяПодсказка" id="56"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>~Список.Редактирует</Field>
+				<Field>Список.Ref</Field>
+				<Field>Список.Редактор</Field>
+				<Field>Список.РеквизитДопУпорядочивания</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	СправочникСтатьиБазыЗнаний.Ссылка,
+	СправочникСтатьиБазыЗнаний.ПометкаУдаления,
+	СправочникСтатьиБазыЗнаний.Наименование,
+	СправочникСтатьиБазыЗнаний.ДатаСоздания,
+	СправочникСтатьиБазыЗнаний.ЗапретПубликации,
+	СправочникСтатьиБазыЗнаний.КраткоеОписание,
+	СправочникСтатьиБазыЗнаний.ОписаниеИзменений,
+	СправочникСтатьиБазыЗнаний.ПолныйТекст,
+	СправочникСтатьиБазыЗнаний.ПоложениеСодержания,
+	СправочникСтатьиБазыЗнаний.РеквизитДопУпорядочивания,
+	СправочникСтатьиБазыЗнаний.Текст,
+	СправочникСтатьиБазыЗнаний.ТекстHTML,
+	СправочникСтатьиБазыЗнаний.Черновик,
+	СправочникСтатьиБазыЗнаний.Ответственный,
+	БлокировкаСтатьейБазыЗнаний.Пользователь КАК Редактор
+ИЗ
+	Справочник.СтатьиБазыЗнаний КАК СправочникСтатьиБазыЗнаний
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.БлокировкаСтатьейБазыЗнаний КАК БлокировкаСтатьейБазыЗнаний
+		ПО СправочникСтатьиБазыЗнаний.Ссылка = БлокировкаСтатьейБазыЗнаний.СтатьяБазыЗнаний
+			И (БлокировкаСтатьейБазыЗнаний.Область = "")</QueryText>
+				<MainTable>Catalog.СтатьиБазыЗнаний</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>РеквизитДопУпорядочивания</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+							<dcsset:viewMode>Inaccessible</dcsset:viewMode>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ТекущийПользователь" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущий пользователь</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Администратор" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Администратор</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПереместитьЭлементВверх" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переместить элемент вверх</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переместить элемент вверх</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.MoveUp</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПереместитьЭлементВверх</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПереместитьЭлементВниз" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переместить элемент вниз</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переместить элемент вниз</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.MoveDown</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПереместитьЭлементВниз</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗахватитьНаРедактирование" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Захватить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Захватить на редактирование</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.РедактироватьФайл</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗахватитьНаРедактирование</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗавершитьРедактирование" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Освободить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Завершить редактирование</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ЗакончитьРедактированиеФайла</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗавершитьРедактирование</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

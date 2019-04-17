@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>ОсновнойНаборДанных</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Наименование</dataPath>
+			<field>Наименование</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ссылка</dataPath>
+			<field>Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Автор</dataPath>
+			<field>Автор</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Автор</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаБлокировки</dataPath>
+			<field>ДатаБлокировки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаСоздания</dataPath>
+			<field>ДатаСоздания</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗапретПубликации</dataPath>
+			<field>ЗапретПубликации</field>
+		</field>
+		<field xsi:type="DataSetFieldNestedDataSet">
+			<dataPath>Категории</dataPath>
+			<field>Категории</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Категории.Категория</dataPath>
+			<field>Категории.Категория</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КраткоеОписание</dataPath>
+			<field>КраткоеОписание</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Редактирует</dataPath>
+			<field>Редактирует</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Редактирует</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РеквизитДопУпорядочивания</dataPath>
+			<field>РеквизитДопУпорядочивания</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Текст</dataPath>
+			<field>Текст</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Черновик</dataPath>
+			<field>Черновик</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Изменена</dataPath>
+			<field>Изменена</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменена</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Комментарии</dataPath>
+			<field>Комментарии</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комментарии</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Проголосовало</dataPath>
+			<field>Проголосовало</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проголосовало</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Просмотры</dataPath>
+			<field>Просмотры</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Просмотры</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Создана</dataPath>
+			<field>Создана</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создана</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СредняяОценка</dataPath>
+			<field>СредняяОценка</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Средняя оценка</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	СтатьиБазыЗнаний.Ссылка,
+	СтатьиБазыЗнаний.Наименование,
+	СтатьиБазыЗнаний.КраткоеОписание,
+	СтатьиБазыЗнаний.Текст,
+	СтатьиБазыЗнаний.РеквизитДопУпорядочивания КАК РеквизитДопУпорядочивания,
+	БлокировкаСтатьейБазыЗнаний.Пользователь КАК Редактирует,
+	БлокировкаСтатьейБазыЗнаний.ДатаБлокировки,
+	СтатьиБазыЗнаний.Ответственный КАК Автор,
+	СтатьиБазыЗнаний.Черновик,
+	ЕСТЬNULL(СтатистикаСтатейБазыЗнаний.Просмотры, 0) КАК Просмотры,
+	ЕСТЬNULL(СтатистикаСтатейБазыЗнаний.Создана, ДАТАВРЕМЯ(1, 1, 1)) КАК Создана,
+	ЕСТЬNULL(СтатистикаСтатейБазыЗнаний.Изменена, ДАТАВРЕМЯ(1, 1, 1)) КАК Изменена,
+	ЕСТЬNULL(СтатистикаСтатейБазыЗнаний.СредняяОценка, 0) КАК СредняяОценка,
+	ЕСТЬNULL(СтатистикаСтатейБазыЗнаний.Проголосовало, 0) КАК Проголосовало,
+	ЕСТЬNULL(СтатистикаСтатейБазыЗнаний.Комментарии, 0) КАК Комментарии
+ИЗ
+	Справочник.СтатьиБазыЗнаний КАК СтатьиБазыЗнаний
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СтатистикаСтатейБазыЗнаний КАК СтатистикаСтатейБазыЗнаний
+		ПО СтатьиБазыЗнаний.Ссылка = СтатистикаСтатейБазыЗнаний.СтатьяБазыЗнаний
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.БлокировкаСтатьейБазыЗнаний КАК БлокировкаСтатьейБазыЗнаний
+		ПО СтатьиБазыЗнаний.Ссылка = БлокировкаСтатьейБазыЗнаний.СтатьяБазыЗнаний
+			И (БлокировкаСтатьейБазыЗнаний.Область = """")
+ГДЕ
+	НЕ СтатьиБазыЗнаний.ПометкаУдаления
+{ГДЕ
+	СтатьиБазыЗнаний.Ссылка.*,
+	СтатьиБазыЗнаний.Наименование,
+	СтатьиБазыЗнаний.ЗапретПубликации,
+	СтатьиБазыЗнаний.Черновик,
+	СтатьиБазыЗнаний.ДатаСоздания,
+	СтатьиБазыЗнаний.Категории.(
+		Категория.*
+	) }</query>
+	</dataSet>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Автор</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаБлокировки</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Изменена</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Комментарии</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КраткоеОписание</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Наименование</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>РеквизитДопУпорядочивания</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Проголосовало</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Просмотры</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Редактирует</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Создана</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СредняяОценка</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Ссылка</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Текст</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Черновик</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

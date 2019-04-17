@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<CheckBoxField name="флОтображатьАктивныеЗадачи" id="38">
+			<DataPath>флОтображатьАктивныеЗадачи</DataPath>
+			<TitleLocation>Right</TitleLocation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="флОтображатьАктивныеЗадачиКонтекстноеМеню" id="39"/>
+			<ExtendedTooltip name="флОтображатьАктивныеЗадачиРасширеннаяПодсказка" id="40"/>
+			<Events>
+				<Event name="OnChange">флОтображатьАктивныеЗадачиПриИзменении</Event>
+			</Events>
+		</CheckBoxField>
+		<Table name="ЗадачиПользователя" id="1">
+			<Representation>List</Representation>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>ЗадачиПользователя</DataPath>
+			<RowPictureDataPath>ЗадачиПользователя.DefaultPicture</RowPictureDataPath>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<ContextMenu name="ЗадачиПользователяКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="ЗадачиПользователяКоманднаяПанель" id="3"/>
+			<ExtendedTooltip name="ЗадачиПользователяРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="ЗадачиПользователяСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>ЗадачиПользователя</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ЗадачиПользователяСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="ЗадачиПользователяСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ЗадачиПользователяСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>ЗадачиПользователя</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ЗадачиПользователяСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="ЗадачиПользователяСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ЗадачиПользователяУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>ЗадачиПользователя</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ЗадачиПользователяУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ЗадачиПользователяУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ЗадачиПользователяКод" id="35">
+					<DataPath>ЗадачиПользователя.Code</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>#</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ЗадачиПользователяКодКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ЗадачиПользователяКодРасширеннаяПодсказка" id="37"/>
+				</LabelField>
+				<LabelField name="ЗадачиПользователяЗадача" id="14">
+					<DataPath>ЗадачиПользователя.Задача</DataPath>
+					<Width>30</Width>
+					<ContextMenu name="ЗадачиПользователяЗадачаКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ЗадачиПользователяЗадачаРасширеннаяПодсказка" id="16"/>
+				</LabelField>
+				<LabelField name="ЗадачиПользователяИнициатор" id="17">
+					<DataPath>ЗадачиПользователя.Инициатор</DataPath>
+					<ContextMenu name="ЗадачиПользователяИнициаторКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ЗадачиПользователяИнициаторРасширеннаяПодсказка" id="19"/>
+				</LabelField>
+				<LabelField name="ЗадачиПользователяПодразделение" id="20">
+					<DataPath>ЗадачиПользователя.Подразделение</DataPath>
+					<ContextMenu name="ЗадачиПользователяПодразделениеКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ЗадачиПользователяПодразделениеРасширеннаяПодсказка" id="22"/>
+				</LabelField>
+				<LabelField name="ЗадачиПользователяИсполнитель" id="23">
+					<DataPath>ЗадачиПользователя.Исполнитель</DataPath>
+					<ContextMenu name="ЗадачиПользователяИсполнительКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ЗадачиПользователяИсполнительРасширеннаяПодсказка" id="25"/>
+				</LabelField>
+				<LabelField name="ЗадачиПользователяСтатус" id="29">
+					<DataPath>ЗадачиПользователя.Статус</DataPath>
+					<ContextMenu name="ЗадачиПользователяСтатусКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ЗадачиПользователяСтатусРасширеннаяПодсказка" id="31"/>
+				</LabelField>
+				<LabelField name="ЗадачиПользователяСрокИсполнения" id="26">
+					<DataPath>ЗадачиПользователя.СрокИсполнения</DataPath>
+					<ContextMenu name="ЗадачиПользователяСрокИсполненияКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ЗадачиПользователяСрокИсполненияРасширеннаяПодсказка" id="28"/>
+				</LabelField>
+				<LabelField name="ЗадачиПользователяПриоритетЗаказчика" id="32">
+					<DataPath>ЗадачиПользователя.ПриоритетЗаказчика</DataPath>
+					<ContextMenu name="ЗадачиПользователяПриоритетЗаказчикаКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ЗадачиПользователяПриоритетЗаказчикаРасширеннаяПодсказка" id="34"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ЗадачиПользователя" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задачи пользователя</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<AutoFillAvailableFields>false</AutoFillAvailableFields>
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	узЗадачи.Код,
+	узЗадачи.Ссылка КАК Задача,
+	узЗадачи.аэПодразделение КАК Подразделение,
+	узЗадачи.аэИнициатор КАК Инициатор,
+	узЗадачи.Исполнитель,
+	узЗадачи.СрокИсполнения,
+	узЗадачи.Статус,
+	узЗадачи.ПриоритетЗаказчика
+ИЗ
+	Справочник.узЗадачи КАК узЗадачи
+ГДЕ
+	(узЗадачи.аэПодразделение В
+				(ВЫБРАТЬ РАЗЛИЧНЫЕ
+					аэПодразделенияРуководители.Ссылка
+				ИЗ
+					Справочник.аэПодразделения.Руководители КАК аэПодразделенияРуководители
+				ГДЕ
+					аэПодразделенияРуководители.Пользователь = &amp;Пользователь)
+			ИЛИ узЗадачи.аэИнициатор.Пользователь = &amp;Пользователь
+			ИЛИ узЗадачи.аэИнициатор.Пользователь.аэРуководитель = &amp;Пользователь
+			ИЛИ узЗадачи.Ссылка В
+				(ВЫБРАТЬ
+					узНаблюдателиЗаЗадачами.Задача
+				ИЗ
+					РегистрСведений.узНаблюдателиЗаЗадачами КАК узНаблюдателиЗаЗадачами
+				ГДЕ
+					узНаблюдателиЗаЗадачами.Пользователь = &amp;Пользователь))
+	И (&amp;ПоказатьВсеЗадачи
+			ИЛИ узЗадачи.Статус.ОтображатьНаРабочемСтоле)</QueryText>
+				<MainTable>Catalog.узЗадачи</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:left xsi:type="dcscor:Field">Статус</dcsset:left>
+							<dcsset:comparisonType>InList</dcsset:comparisonType>
+							<dcsset:right xsi:type="v8:ValueListType">
+								<v8:valueType/>
+								<v8:lastId xsi:type="xs:decimal">-1</v8:lastId>
+							</dcsset:right>
+							<dcsset:userSettingID>2cdbc5ce-70a3-4f8b-8861-fd2557bdb9ad</dcsset:userSettingID>
+						</dcsset:item>
+						<dcsset:userSettingID>80715e26-2e47-4348-aa0c-44e6653740eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="флОтображатьАктивныеЗадачи" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отображать только активные задачи</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>

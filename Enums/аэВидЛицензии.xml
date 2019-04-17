@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
+	<Enum uuid="4c0ef612-27eb-4b6d-b0c6-c7bce859db06">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.аэВидЛицензии" category="Ref">
+				<xr:TypeId>0d2162c0-8f77-4bb2-a536-94eea27e9f76</xr:TypeId>
+				<xr:ValueId>79a0a523-f2b6-4a33-bf79-88bbc91e1240</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.аэВидЛицензии" category="Manager">
+				<xr:TypeId>221f6a41-d3f7-4ab5-b2c9-7e446151941d</xr:TypeId>
+				<xr:ValueId>db93e0f1-7e49-403b-8f7f-7bc51133a390</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.аэВидЛицензии" category="List">
+				<xr:TypeId>3062b05d-1b5b-48ff-8b0e-39177cddef8e</xr:TypeId>
+				<xr:ValueId>19fec303-9476-4d03-9398-7991548e72b3</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>аэВидЛицензии</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид лицензии</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="45005256-714d-4a89-9cfe-9bed04de6a1e">
+				<Properties>
+					<Name>Программная</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Программная</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="8ed4f1bf-db69-485f-8550-d0527b8419fb">
+				<Properties>
+					<Name>Аппаратная</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Аппаратная</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>HASP</Comment>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

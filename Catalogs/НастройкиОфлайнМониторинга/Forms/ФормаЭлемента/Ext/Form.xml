@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="СоздатьТаблицуХраненияЗначений" id="15">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<CommandName>Form.Command.СоздатьТаблицуХраненияЗначений</CommandName>
+				<Picture>
+					<xr:Ref>StdPicture.ExternalDataSourceTable</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<ExtendedTooltip name="СоздатьТаблицуХраненияЗначенийРасширеннаяПодсказка" id="16"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Наименование" id="3">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="17"/>
+		</InputField>
+		<InputField name="ИмяСервераSQL" id="5">
+			<DataPath>Объект.ИмяСервераSQL</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ИмяСервераSQLКонтекстноеМеню" id="6"/>
+			<ExtendedTooltip name="ИмяСервераSQLРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<CheckBoxField name="АутентификацияWindows" id="7">
+			<DataPath>Объект.АутентификацияWindows</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="АутентификацияWindowsКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="АутентификацияWindowsРасширеннаяПодсказка" id="19"/>
+			<Events>
+				<Event name="OnChange">АутентификацияWindowsПриИзменении</Event>
+			</Events>
+		</CheckBoxField>
+		<InputField name="ЛогинSQL" id="9">
+			<DataPath>Объект.ЛогинSQL</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ЛогинSQLКонтекстноеМеню" id="10"/>
+			<ExtendedTooltip name="ЛогинSQLРасширеннаяПодсказка" id="20"/>
+		</InputField>
+		<InputField name="ПарольSQL" id="11">
+			<DataPath>Объект.ПарольSQL</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПарольSQLКонтекстноеМеню" id="12"/>
+			<ExtendedTooltip name="ПарольSQLРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<InputField name="БазаДанных" id="13">
+			<DataPath>Объект.БазаДанных</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="БазаДанныхКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="БазаДанныхРасширеннаяПодсказка" id="22"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.НастройкиОфлайнМониторинга</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СоздатьТаблицуХраненияЗначений" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать таблицу хранения значений</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать таблицу хранения значений</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьТаблицуХраненияЗначений</Action>
+		</Command>
+	</Commands>
+</Form>

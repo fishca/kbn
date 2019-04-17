@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Комментарий</dataPath>
+			<field>Комментарий</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комментарий</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОсновноеПодразделение</dataPath>
+			<field>ОсновноеПодразделение</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОсновнаяКонфигурация</dataPath>
+			<field>ОсновнаяКонфигурация</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоСЖСВ</dataPath>
+			<field>КоличествоСЖСВ</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоРозница</dataPath>
+			<field>КоличествоРозница</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоБФ</dataPath>
+			<field>КоличествоБФ</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ссылка</dataPath>
+			<field>Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтатусСогласования</dataPath>
+			<field>СтатусСогласования</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоЗУП</dataPath>
+			<field>КоличествоЗУП</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоЕРП</dataPath>
+			<field>КоличествоЕРП</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Наименование</dataPath>
+			<field>Наименование</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоДО</dataPath>
+			<field>КоличествоДО</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	аэОбъектыИнформационныхБаз.Наименование,
+	аэОбъектыИнформационныхБаз.ОсновнаяКонфигурация,
+	аэОбъектыИнформационныхБаз.ОсновноеПодразделение,
+	аэОбъектыИнформационныхБаз.СтатусСогласования,
+	аэОбъектыИнформационныхБаз.КоличествоБФ,
+	аэОбъектыИнформационныхБаз.КоличествоДО,
+	аэОбъектыИнформационныхБаз.КоличествоЕРП,
+	аэОбъектыИнформационныхБаз.КоличествоЗУП,
+	аэОбъектыИнформационныхБаз.КоличествоРозница,
+	аэОбъектыИнформационныхБаз.КоличествоСЖСВ,
+	ПОДСТРОКА(аэОбъектыИнформационныхБаз.Комментарий, 1, 500) КАК Комментарий,
+	аэОбъектыИнформационныхБаз.Ссылка
+ИЗ
+	Справочник.аэОбъектыИнформационныхБаз КАК аэОбъектыИнформационныхБаз
+ГДЕ
+	аэОбъектыИнформационныхБаз.ДоступРегламентируется</query>
+	</dataSet>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных2</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Конфигурация</dataPath>
+			<field>Конфигурация</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ссылка</dataPath>
+			<field>Ссылка</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	аэОбъектыИнформационныхБазКонфигурации.Ссылка,
+	аэОбъектыИнформационныхБазКонфигурации.Конфигурация
+ИЗ
+	Справочник.аэОбъектыИнформационныхБаз.Конфигурации КАК аэОбъектыИнформационныхБазКонфигурации</query>
+	</dataSet>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных3</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ссылка</dataPath>
+			<field>Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОтветственноеЛицо</dataPath>
+			<field>ОтветственноеЛицо</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	аэОбъектыИнформационныхБазОтветственные.Ссылка,
+	аэОбъектыИнформационныхБазОтветственные.ОтветственноеЛицо
+ИЗ
+	Справочник.аэОбъектыИнформационныхБаз.Ответственные КАК аэОбъектыИнформационныхБазОтветственные</query>
+	</dataSet>
+	<dataSetLink>
+		<sourceDataSet>НаборДанных1</sourceDataSet>
+		<destinationDataSet>НаборДанных2</destinationDataSet>
+		<sourceExpression>Ссылка</sourceExpression>
+		<destinationExpression>Ссылка</destinationExpression>
+	</dataSetLink>
+	<dataSetLink>
+		<sourceDataSet>НаборДанных1</sourceDataSet>
+		<destinationDataSet>НаборДанных3</destinationDataSet>
+		<sourceExpression>Ссылка</sourceExpression>
+		<destinationExpression>Ссылка</destinationExpression>
+	</dataSetLink>
+	<totalField>
+		<dataPath>Конфигурация</dataPath>
+		<expression>СоединитьСтроки(Конфигурация)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОтветственноеЛицо</dataPath>
+		<expression>СоединитьСтроки(ОтветственноеЛицо)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоБФ</dataPath>
+		<expression>Сумма(КоличествоБФ)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоДО</dataPath>
+		<expression>Сумма(КоличествоДО)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоЕРП</dataPath>
+		<expression>Сумма(КоличествоЕРП)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоЗУП</dataPath>
+		<expression>Сумма(КоличествоЗУП)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоРозница</dataPath>
+		<expression>Сумма(КоличествоРозница)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоСЖСВ</dataPath>
+		<expression>Сумма(КоличествоСЖСВ)</expression>
+	</totalField>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Ссылка</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОсновнаяКонфигурация</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Комментарий</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Конфигурация</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОтветственноеЛицо</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СтатусСогласования</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>СтатусСогласования</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Наименование</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Зеленый</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>РасположениеИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

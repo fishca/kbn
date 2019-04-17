@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.7">
+	<Item id="ae4a846f-f623-4b56-830a-0f93a7e258e7">
+		<Name>СписокПользователейКомуОтправлятьСистемныеУведомления</Name>
+		<Code>000000001</Code>
+		<Description>Список пользователей кому отправлять системные уведомления</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="a28fc012-5cb6-472b-8441-a8494a3d37d0">
+		<Name>СтатусЗадачиПоУмолчанию</Name>
+		<Code>000000002</Code>
+		<Description>Статус задачи по умолчанию</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

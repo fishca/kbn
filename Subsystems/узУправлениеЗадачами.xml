@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
+	<Subsystem uuid="7cb93508-bb28-41e2-b426-29df3dac5178">
+		<Properties>
+			<Name>узУправлениеЗадачами</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Управление задачами</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Task Management</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Task Management</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture>
+				<xr:Ref>CommonPicture.аэЗадачи16</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.узОбновлениеИнформационнойБазы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.узПользователь</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.узПолныеПрава</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.узВидыСтатусов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.узЗадачи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.узСтатусыЗадачи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.узКонфигурации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.узЗадачи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.узОтчетПоЗадачам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.узКанбанДоска</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.узВидыСобытий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.узВариантыВажностиЗадачи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.узСпринты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.узСпринт</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.узИдентификаторыОбъектовМетаданныхКонфигурации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.узВидыИзменений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.узИсторияКонфигураций</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.узЗагрузкаИзмененийИзХранилища</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.узЗаписиИсторииКонфигурации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.узНаблюдателиЗаЗадачами</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.узСледитьЗаЗадачей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.узНеСледитьЗаЗадачей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.узНаличиеЗаметокПоПредмету</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Заметки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.узИспользоватьУчетВремени</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.узИспользоватьУчетВремени</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.узОткрытьНастройки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.узЗадачиПрисоединенныеФайлы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.ОписаниеИзмененийСистемы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommandGroup.узДействияЗадачи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.узНастройкиУправленияЗадачами</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.узОбщийМодульСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.узПереопределитьПолучаемуюФормуПрисоединенногоФайла</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.узУстановитьСтатусИзмененияПометкиУдаленияОбъекта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.узПроверитьНаличиеЗаметокПоПредмету</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.узЗагрузкаИзмененийИзХранилища</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.узВопросыОтветы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.узИспользоватьВопросыИОтветы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.узИспользоватьВопросыИОтветы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.узИконкаMDДобавитьЗаголовки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.узИконкаMDЖирный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.узИконкаMDКурсив</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.узИконкаMDНумерованныйСписок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.узИконкаMDМаркерыСписок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.узИконкаMDЦитата</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.узИконкаMDЗачеркнутый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.узМакетHTML</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.узМакетJS</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.узМакетCSS</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.узОбщийМодульКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.узОформлениеТекста</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.узИспользоватьСвоиЦветаДляЗадач</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.узИспользоватьСвоиЦветаДляЗадач</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.узКонстанты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.узВыпускРелиза</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.узВыпускРелизаПрисоединенныеФайлы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.узУстановитьПометкуУдаленияПрисоединенныхФайловДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.узАктивностиПользователей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.узАктивностьПользователя</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.узНастройкиДляСтатусов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.узРегистрироватьАктивностьПользователей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.узРегистрироватьАктивностьПользователей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.узПоказыватьАктивностьПользователяНаРабочемСтоле</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.узСловарь</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.узТекущиеДела</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.узВыполнил</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.узТекущиеДела</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.узПоказыватьАктивностьПользователяНаРабочемСтоле</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.узСловарьПоУмолчанию</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.узИконкаДобавитьДело</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.узРазвернутьНаПолныйЭкран</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.узУбратьПолноэкранныйРежим</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.узПросмотрИсторииХранилища</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.узШаблоны</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.Gant1C</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЭлектронноеПисьмоВходящее</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.аэПроекты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.аэДатаНачалаЧтенияВходящейЭлектроннойПочты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.аэВидыОперацийЗадач</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.аэИсточникиОбращений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.СтатистикаПоПредметам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.аэСтруктураВзаимодействий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.аэИспользоватьНовуюВерсиюСпискаПисем</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.аэОтчетПоИнициаторам</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

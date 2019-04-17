@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
+	<Subsystem uuid="c3d04449-8cc4-44b7-a83c-fcd5166c0fb1">
+		<Properties>
+			<Name>БазаЗнаний</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>База знаний</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СтатьиБазыЗнаний</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ДобавлениеИзменениеБазыЗнаний</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЧтениеБазыЗнаний</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ИсторияСтатейБазыЗнаний</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ВставитьГиперссылку</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ВставитьКартинку</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ВставитьТаблицу</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.БазаЗнанийКлиентСерверПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ВыравниваниеПоВерхнемуКраю</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ВыравниваниеПоСередине</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ВыравниваниеПоНижнемуКраю</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ХранилищеДанныхБазыЗнаний</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.КатегорииБазыЗнаний</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.БазаЗнаний</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.БазаЗнаний</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.БазаЗнанийЗаполнитьЗначениеРеквизитаУпорядочивания</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.БазаЗнанийСброситьЗначениеРеквизитаУпорядочивания</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ДомашняяСтраница</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СтатистикаСтатейБазыЗнаний</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.БазаЗнаний</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.СтраницаВИнтернете</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.БазаЗнанийКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ВставитьСноску</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РейтингСтатейБазыЗнаний</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.БазаЗнанийВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.БазаЗнанийКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.КартинкаСлеваТекстВокруг</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.КартинкаПоЦентруТекстСверхуСнизу</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.КартинкаСправаТекстВокруг</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.НастройкиБазыЗнаний</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ОбновитьОформление</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПользователиБазыЗнаний</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.БлокировкаСтатьейБазыЗнаний</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбновлениеИнформационнойБазыБазаЗнаний</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.БазаЗнанийHTML</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СессииПользователейБазыЗнаний</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.КлючевыеСловаБазыЗнаний</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СвязьКлючевыхСловБазыЗнаний</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РейтингКлючевыхСловБазыЗнаний</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.БазаЗнанийОбновление</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ИзбранноеБазыЗнаний</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.БазаЗнанийСлужебный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.КомментарииБазыЗнаний</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СвязьКомментариевБазыЗнаний</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.БазаЗнанийHTMLКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ОповещенияБазыЗнаний</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.БазаЗнанийAPIКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.БазаЗнанийCSSКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.БазаЗнанийHTMLВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СтатистикаКатегорийБазыЗнаний</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.БазаЗнанийHTMLКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПолучателиНовостейБазыЗнаний</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НовостиБазыЗнаний</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СтатьиБазыЗнанийПрисоединенныеФайлы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыНовостейБазыЗнаний</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Пользователи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВнешниеПользователи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СтатистикаНовостейБазыЗнаний</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects>
+			<Subsystem>ВебСервисы</Subsystem>
+		</ChildObjects>
+	</Subsystem>
+</MetaDataObject>

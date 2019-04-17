@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РеквизитДопУпорядочивания</dataPath>
+			<field>РеквизитДопУпорядочивания</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Статус</dataPath>
+			<field>Статус</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Задача</dataPath>
+			<field>Задача</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задача</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Task</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Task</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СрокИсполнения</dataPath>
+			<field>СрокИсполнения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Исполнитель</dataPath>
+			<field>Исполнитель</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Важность</dataPath>
+			<field>Важность</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОсновнаяЗадача</dataPath>
+			<field>ОсновнаяЗадача</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Конфигурация</dataPath>
+			<field>Конфигурация</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерВнешнейЗаявки</dataPath>
+			<field>НомерВнешнейЗаявки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерЗадачи</dataPath>
+			<field>НомерЗадачи</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер задачи</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КороткоеИмя</dataPath>
+			<field>КороткоеИмя</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Короткое имя</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОсновнаяЗадачаПредставление</dataPath>
+			<field>ОсновнаяЗадачаПредставление</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основная задача представление</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗадачаПредставление</dataPath>
+			<field>ЗадачаПредставление</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задача представление</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Спринт</dataPath>
+			<field>Спринт</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаПередачиИсполнителю</dataPath>
+			<field>ДатаПередачиИсполнителю</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаВыполнения</dataPath>
+			<field>ДатаВыполнения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаПоследнегоИзменения</dataPath>
+			<field>ДатаПоследнегоИзменения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИзмененЦветПоУмолчанию</dataPath>
+			<field>ИзмененЦветПоУмолчанию</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>БуферПроцент</dataPath>
+			<field>БуферПроцент</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Буфер процент</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЦветДляЗадачиЧисло</dataPath>
+			<field>ЦветДляЗадачиЧисло</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цвет для задачи число</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаНачалаРаботПоЗадаче</dataPath>
+			<field>ДатаНачалаРаботПоЗадаче</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Срочно</dataPath>
+			<field>Срочно</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Срочно</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	узНаблюдателиЗаЗадачами.Задача КАК Задача
+ПОМЕСТИТЬ ВТОтборЗадачПоНаблюдателю
+ИЗ
+	РегистрСведений.узНаблюдателиЗаЗадачами КАК узНаблюдателиЗаЗадачами
+ГДЕ
+	ВЫБОР
+			КОГДА &amp;ИспользоватьОтборПоНаблюдателю
+				ТОГДА узНаблюдателиЗаЗадачами.Пользователь = &amp;Наблюдатель
+			ИНАЧЕ ИСТИНА
+		КОНЕЦ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	узЗадачи.Ссылка КАК Задача,
+	узЗадачи.Ссылка.Наименование КАК ЗадачаПредставление,
+	узЗадачи.Ссылка.Код КАК НомерЗадачи,
+	узЗадачи.Статус КАК Статус,
+	узЗадачи.РеквизитДопУпорядочивания КАК РеквизитДопУпорядочивания,
+	узЗадачи.Исполнитель КАК Исполнитель,
+	узЗадачи.Исполнитель.узКороткоеИмя КАК КороткоеИмя,
+	ПОДСТРОКА(узЗадачи.ОсновнаяЗадача.Наименование, 1, 25) КАК ОсновнаяЗадачаПредставление,
+	узЗадачи.СрокИсполнения КАК СрокИсполнения,
+	узЗадачи.Конфигурация КАК Конфигурация,
+	узЗадачи.Спринт КАК Спринт,
+	узЗадачи.Важность КАК Важность,
+	узЗадачи.НомерВнешнейЗаявки КАК НомерВнешнейЗаявки,
+	узЗадачи.ОсновнаяЗадача КАК ОсновнаяЗадача,
+	узЗадачи.ДатаНачалаРаботПоЗадаче КАК ДатаНачалаРаботПоЗадаче,
+	узЗадачи.ДатаПередачиИсполнителю КАК ДатаПередачиИсполнителю,
+	узЗадачи.ДатаПоследнегоИзменения КАК ДатаПоследнегоИзменения,
+	узЗадачи.ДатаВыполнения КАК ДатаВыполнения,
+	ВЫБОР
+		КОГДА узЗадачи.СрокИсполнения = ДАТАВРЕМЯ(1, 1, 1)
+			ТОГДА 0
+		КОГДА узЗадачи.ДатаВыполнения &lt;&gt; ДАТАВРЕМЯ(1, 1, 1)
+			ТОГДА ВЫРАЗИТЬ(РАЗНОСТЬДАТ(узЗадачи.ДатаНачалаРаботПоЗадаче, узЗадачи.ДатаВыполнения, СЕКУНДА) / РАЗНОСТЬДАТ(узЗадачи.ДатаНачалаРаботПоЗадаче, узЗадачи.СрокИсполнения, СЕКУНДА) * 100 КАК ЧИСЛО(15, 2))
+		ИНАЧЕ ВЫРАЗИТЬ(РАЗНОСТЬДАТ(узЗадачи.ДатаНачалаРаботПоЗадаче, &amp;ТекущаяДата, СЕКУНДА) / РАЗНОСТЬДАТ(узЗадачи.ДатаНачалаРаботПоЗадаче, узЗадачи.СрокИсполнения, СЕКУНДА) * 100 КАК ЧИСЛО(15, 2))
+	КОНЕЦ КАК БуферПроцент,
+	узЗадачи.ИзмененЦветПоУмолчанию КАК ИзмененЦветПоУмолчанию,
+	узЗадачи.аэСрочно КАК Срочно
+ПОМЕСТИТЬ ВТРезультат
+ИЗ
+	Справочник.узЗадачи КАК узЗадачи
+ГДЕ
+	узЗадачи.ПоказыватьВОтчетахИКанбанДоске
+	И ВЫБОР
+			КОГДА &amp;ИспользоватьОтборПоНаблюдателю
+				ТОГДА узЗадачи.Ссылка В
+						(ВЫБРАТЬ
+							ВТОтборЗадачПоНаблюдателю.Задача
+						ИЗ
+							ВТОтборЗадачПоНаблюдателю)
+			ИНАЧЕ ИСТИНА
+		КОНЕЦ
+	И узЗадачи.Статус В(&amp;МассивВыбранныхСтатусовКолонок)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ВТРезультат.Задача КАК Задача,
+	ВТРезультат.ЗадачаПредставление КАК ЗадачаПредставление,
+	ВТРезультат.НомерЗадачи КАК НомерЗадачи,
+	ВТРезультат.Статус КАК Статус,
+	ВТРезультат.РеквизитДопУпорядочивания КАК РеквизитДопУпорядочивания,
+	ВТРезультат.Исполнитель КАК Исполнитель,
+	ВТРезультат.КороткоеИмя КАК КороткоеИмя,
+	ВТРезультат.ОсновнаяЗадачаПредставление КАК ОсновнаяЗадачаПредставление,
+	ВТРезультат.СрокИсполнения КАК СрокИсполнения,
+	ВТРезультат.Конфигурация КАК Конфигурация,
+	ВТРезультат.Спринт КАК Спринт,
+	ВТРезультат.Важность КАК Важность,
+	ВТРезультат.НомерВнешнейЗаявки КАК НомерВнешнейЗаявки,
+	ВТРезультат.ОсновнаяЗадача КАК ОсновнаяЗадача,
+	ВТРезультат.ДатаНачалаРаботПоЗадаче КАК ДатаНачалаРаботПоЗадаче,
+	ВТРезультат.ДатаПередачиИсполнителю КАК ДатаПередачиИсполнителю,
+	ВТРезультат.ДатаПоследнегоИзменения КАК ДатаПоследнегоИзменения,
+	ВТРезультат.ДатаВыполнения КАК ДатаВыполнения,
+	ВЫБОР
+		КОГДА ВТРезультат.Важность = ЗНАЧЕНИЕ(Справочник.узВариантыВажностиЗадачи.Высокая)
+			ТОГДА 2
+		КОГДА ВТРезультат.Важность = ЗНАЧЕНИЕ(Справочник.узВариантыВажностиЗадачи.Обычная)
+			ТОГДА ВЫБОР
+					КОГДА ВТРезультат.БуферПроцент &lt; 30
+						ТОГДА 4
+					КОГДА 30 &lt;= ВТРезультат.БуферПроцент
+							И ВТРезультат.БуферПроцент &lt; 60
+						ТОГДА 3
+					КОГДА 60 &lt;= ВТРезультат.БуферПроцент
+							И ВТРезультат.БуферПроцент &lt; 100
+						ТОГДА 2
+					КОГДА 100 &lt;= ВТРезультат.БуферПроцент
+						ТОГДА 1
+				КОНЕЦ
+		КОГДА ВТРезультат.Важность = ЗНАЧЕНИЕ(Справочник.узВариантыВажностиЗадачи.Низкая)
+			ТОГДА 10
+		ИНАЧЕ 4
+	КОНЕЦ КАК ЦветДляЗадачиЧисло,
+	ВТРезультат.БуферПроцент КАК БуферПроцент,
+	ВТРезультат.ИзмененЦветПоУмолчанию КАК ИзмененЦветПоУмолчанию,
+	ВТРезультат.Срочно КАК Срочно
+ИЗ
+	ВТРезультат КАК ВТРезультат</query>
+	</dataSet>
+	<calculatedField>
+		<dataPath>НомерЗадачиПредставление</dataPath>
+		<expression>ВЫБОР КОГДА Срочно ТОГДА
+		"!:#"+Строка(Формат(НомерЗадачи,"ЧГ=0"))
+ИНАЧЕ
+		"#"+Строка(Формат(НомерЗадачи,"ЧГ=0"))
+Конец</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Номер задачи представление</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>НомерЗадачиПредставлениеOLD</dataPath>
+		<expression>"#"+Строка(Формат(НомерЗадачи,"ЧГ=0"))</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Номер задачи представление OLD</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<parameter>
+		<name>ИспользоватьОтборПоНаблюдателю</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Использовать отбор по наблюдателю</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:boolean</v8:Type>
+		</valueType>
+		<value xsi:type="xs:boolean">false</value>
+		<useRestriction>true</useRestriction>
+		<expression>ЗНАЧЕНИЕЗАПОЛНЕНО(&amp;Наблюдатель)</expression>
+	</parameter>
+	<parameter>
+		<name>Наблюдатель</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Наблюдатель</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Пользователи</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>МассивВыбранныхСтатусовКолонок</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Массив выбранных статусов колонок</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.узСтатусыЗадачи</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ТекущаяДата</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Текущая дата</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Current date</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>ro</v8:lang>
+				<v8:content>Data curentă</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Задача</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Статус</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КороткоеИмя</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОсновнаяЗадачаПредставление</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НомерЗадачиПредставление</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЗадачаПредставление</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОсновнаяЗадача</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЦветДляЗадачиЧисло</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ИзмененЦветПоУмолчанию</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Исполнитель</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Конфигурация</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Спринт</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">ОсновнаяЗадача</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">ДатаПоследнегоИзменения</dcsset:left>
+					<dcsset:comparisonType>GreaterOrEqual</dcsset:comparisonType>
+					<dcsset:right xsi:type="v8:StandardBeginningDate">
+						<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisDay</v8:variant>
+					</dcsset:right>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Наблюдатель</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>16655e8c-bf28-4bdf-9c46-8f88d2bccf2d</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>ЦветДляЗадачиЧисло</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>РеквизитДопУпорядочивания</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

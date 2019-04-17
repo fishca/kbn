@@ -1,0 +1,518 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="ГруппаСтраницы" id="59">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="60"/>
+			<ChildItems>
+				<Page name="ГруппаСтраницаОсновные" id="61">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основные</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа страница основные</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<ExtendedTooltip name="ГруппаСтраницаОсновныеРасширеннаяПодсказка" id="62"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаРеквизитыШапка" id="123">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа реквизиты шапка</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="ГруппаРеквизитыШапкаРасширеннаяПодсказка" id="124"/>
+							<ChildItems>
+								<InputField name="Руководитель" id="37">
+									<DataPath>Объект.Руководитель</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="РуководительКонтекстноеМеню" id="38"/>
+									<ExtendedTooltip name="РуководительРасширеннаяПодсказка" id="39"/>
+								</InputField>
+								<InputField name="ДатаСоздания" id="34">
+									<DataPath>Объект.ДатаСоздания</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДатаСозданияКонтекстноеМеню" id="35"/>
+									<ExtendedTooltip name="ДатаСозданияРасширеннаяПодсказка" id="36"/>
+								</InputField>
+								<InputField name="МобильныйТелефон" id="31">
+									<DataPath>Объект.МобильныйТелефон</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="МобильныйТелефонКонтекстноеМеню" id="32"/>
+									<ExtendedTooltip name="МобильныйТелефонРасширеннаяПодсказка" id="33"/>
+								</InputField>
+								<InputField name="ДомашнийТелефон" id="28">
+									<DataPath>Объект.ДомашнийТелефон</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДомашнийТелефонКонтекстноеМеню" id="29"/>
+									<ExtendedTooltip name="ДомашнийТелефонРасширеннаяПодсказка" id="30"/>
+								</InputField>
+								<InputField name="ДомашнийКаталог" id="25">
+									<DataPath>Объект.ДомашнийКаталог</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДомашнийКаталогКонтекстноеМеню" id="26"/>
+									<ExtendedTooltip name="ДомашнийКаталогРасширеннаяПодсказка" id="27"/>
+								</InputField>
+								<CheckBoxField name="Активен" id="22">
+									<DataPath>Объект.Активен</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="АктивенКонтекстноеМеню" id="23"/>
+									<ExtendedTooltip name="АктивенРасширеннаяПодсказка" id="24"/>
+								</CheckBoxField>
+								<InputField name="Организация" id="19">
+									<DataPath>Объект.Организация</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОрганизацияКонтекстноеМеню" id="20"/>
+									<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="21"/>
+								</InputField>
+								<InputField name="Телефон" id="16">
+									<DataPath>Объект.Телефон</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТелефонКонтекстноеМеню" id="17"/>
+									<ExtendedTooltip name="ТелефонРасширеннаяПодсказка" id="18"/>
+								</InputField>
+								<InputField name="Подразделение" id="13">
+									<DataPath>Объект.Подразделение</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПодразделениеКонтекстноеМеню" id="14"/>
+									<ExtendedTooltip name="ПодразделениеРасширеннаяПодсказка" id="15"/>
+								</InputField>
+								<InputField name="Должность" id="10">
+									<DataPath>Объект.Должность</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДолжностьКонтекстноеМеню" id="11"/>
+									<ExtendedTooltip name="ДолжностьРасширеннаяПодсказка" id="12"/>
+								</InputField>
+								<InputField name="ЭлектроннаяПочта" id="7">
+									<DataPath>Объект.ЭлектроннаяПочта</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЭлектроннаяПочтаКонтекстноеМеню" id="8"/>
+									<ExtendedTooltip name="ЭлектроннаяПочтаРасширеннаяПодсказка" id="9"/>
+								</InputField>
+								<InputField name="Наименование" id="4">
+									<DataPath>Объект.Description</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+									<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+								</InputField>
+								<InputField name="Код" id="1">
+									<DataPath>Объект.Code</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+									<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаОсновныеРеквизитыИстория" id="125">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа основные реквизиты история</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="ГруппаОсновныеРеквизитыИсторияРасширеннаяПодсказка" id="126"/>
+							<ChildItems>
+								<Table name="ИсторияИзменения" id="67">
+									<ReadOnly>true</ReadOnly>
+									<Height>1</Height>
+									<UseAlternationRowColor>true</UseAlternationRowColor>
+									<EnableStartDrag>true</EnableStartDrag>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>ИсторияИзменения</DataPath>
+									<RowPictureDataPath>ИсторияИзменения.DefaultPicture</RowPictureDataPath>
+									<CommandSet>
+										<ExcludedCommand>Change</ExcludedCommand>
+										<ExcludedCommand>Copy</ExcludedCommand>
+										<ExcludedCommand>Create</ExcludedCommand>
+										<ExcludedCommand>Delete</ExcludedCommand>
+									</CommandSet>
+									<AutoRefresh>false</AutoRefresh>
+									<AutoRefreshPeriod>60</AutoRefreshPeriod>
+									<Period>
+										<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+										<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+										<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+									</Period>
+									<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+									<RestoreCurrentRow>false</RestoreCurrentRow>
+									<TopLevelParent xsi:nil="true"/>
+									<ShowRoot>false</ShowRoot>
+									<AllowRootChoice>false</AllowRootChoice>
+									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<ContextMenu name="ИсторияИзмененияКонтекстноеМеню" id="68"/>
+									<AutoCommandBar name="ИсторияИзмененияКоманднаяПанель" id="69"/>
+									<ExtendedTooltip name="ИсторияИзмененияРасширеннаяПодсказка" id="70"/>
+									<SearchStringAddition name="ИсторияИзмененияСтрокаПоиска" id="71">
+										<AdditionSource>
+											<Item>ИсторияИзменения</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ИсторияИзмененияСтрокаПоискаКонтекстноеМеню" id="72"/>
+										<ExtendedTooltip name="ИсторияИзмененияСтрокаПоискаРасширеннаяПодсказка" id="73"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ИсторияИзмененияСостояниеПросмотра" id="74">
+										<AdditionSource>
+											<Item>ИсторияИзменения</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ИсторияИзмененияСостояниеПросмотраКонтекстноеМеню" id="75"/>
+										<ExtendedTooltip name="ИсторияИзмененияСостояниеПросмотраРасширеннаяПодсказка" id="76"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ИсторияИзмененияУправлениеПоиском" id="77">
+										<AdditionSource>
+											<Item>ИсторияИзменения</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ИсторияИзмененияУправлениеПоискомКонтекстноеМеню" id="78"/>
+										<ExtendedTooltip name="ИсторияИзмененияУправлениеПоискомРасширеннаяПодсказка" id="79"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<LabelField name="ИсторияИзмененияРеквизит" id="89">
+											<DataPath>ИсторияИзменения.Реквизит</DataPath>
+											<ContextMenu name="ИсторияИзмененияРеквизитКонтекстноеМеню" id="90"/>
+											<ExtendedTooltip name="ИсторияИзмененияРеквизитРасширеннаяПодсказка" id="91"/>
+										</LabelField>
+										<LabelField name="ИсторияИзмененияПериод" id="95">
+											<DataPath>ИсторияИзменения.Period</DataPath>
+											<ContextMenu name="ИсторияИзмененияПериодКонтекстноеМеню" id="96"/>
+											<ExtendedTooltip name="ИсторияИзмененияПериодРасширеннаяПодсказка" id="97"/>
+										</LabelField>
+										<LabelField name="ИсторияИзмененияЗначение" id="80">
+											<DataPath>ИсторияИзменения.Значение</DataPath>
+											<ContextMenu name="ИсторияИзмененияЗначениеКонтекстноеМеню" id="81"/>
+											<ExtendedTooltip name="ИсторияИзмененияЗначениеРасширеннаяПодсказка" id="82"/>
+										</LabelField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаСтраницаГруппы" id="63">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа страница группы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<ExtendedTooltip name="ГруппаСтраницаГруппыРасширеннаяПодсказка" id="64"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаСписокГрупп" id="127">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа список групп</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="ГруппаСписокГруппРасширеннаяПодсказка" id="128"/>
+							<ChildItems>
+								<Table name="Группы" id="40">
+									<Representation>List</Representation>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>Объект.Группы</DataPath>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="ГруппыКонтекстноеМеню" id="41"/>
+									<AutoCommandBar name="ГруппыКоманднаяПанель" id="42"/>
+									<ExtendedTooltip name="ГруппыРасширеннаяПодсказка" id="43"/>
+									<SearchStringAddition name="ГруппыСтрокаПоиска" id="44">
+										<AdditionSource>
+											<Item>Группы</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ГруппыСтрокаПоискаКонтекстноеМеню" id="45"/>
+										<ExtendedTooltip name="ГруппыСтрокаПоискаРасширеннаяПодсказка" id="46"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ГруппыСостояниеПросмотра" id="47">
+										<AdditionSource>
+											<Item>Группы</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ГруппыСостояниеПросмотраКонтекстноеМеню" id="48"/>
+										<ExtendedTooltip name="ГруппыСостояниеПросмотраРасширеннаяПодсказка" id="49"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ГруппыУправлениеПоиском" id="50">
+										<AdditionSource>
+											<Item>Группы</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ГруппыУправлениеПоискомКонтекстноеМеню" id="51"/>
+										<ExtendedTooltip name="ГруппыУправлениеПоискомРасширеннаяПодсказка" id="52"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<LabelField name="ГруппыНомерСтроки" id="53">
+											<DataPath>Объект.Группы.LineNumber</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ГруппыНомерСтрокиКонтекстноеМеню" id="54"/>
+											<ExtendedTooltip name="ГруппыНомерСтрокиРасширеннаяПодсказка" id="55"/>
+										</LabelField>
+										<InputField name="ГруппыГруппа" id="56">
+											<DataPath>Объект.Группы.Группа</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ГруппыГруппаКонтекстноеМеню" id="57"/>
+											<ExtendedTooltip name="ГруппыГруппаРасширеннаяПодсказка" id="58"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаСписокГруппИстория" id="129">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа список групп история</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="ГруппаСписокГруппИсторияРасширеннаяПодсказка" id="130"/>
+							<ChildItems>
+								<Table name="ИсторияГрупп" id="98">
+									<ReadOnly>true</ReadOnly>
+									<Height>1</Height>
+									<UseAlternationRowColor>true</UseAlternationRowColor>
+									<EnableStartDrag>true</EnableStartDrag>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>ИсторияГрупп</DataPath>
+									<RowPictureDataPath>ИсторияГрупп.DefaultPicture</RowPictureDataPath>
+									<CommandSet>
+										<ExcludedCommand>Change</ExcludedCommand>
+										<ExcludedCommand>Copy</ExcludedCommand>
+										<ExcludedCommand>Create</ExcludedCommand>
+										<ExcludedCommand>Delete</ExcludedCommand>
+									</CommandSet>
+									<AutoRefresh>false</AutoRefresh>
+									<AutoRefreshPeriod>60</AutoRefreshPeriod>
+									<Period>
+										<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+										<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+										<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+									</Period>
+									<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+									<RestoreCurrentRow>false</RestoreCurrentRow>
+									<TopLevelParent xsi:nil="true"/>
+									<ShowRoot>false</ShowRoot>
+									<AllowRootChoice>false</AllowRootChoice>
+									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<ContextMenu name="ИсторияГруппКонтекстноеМеню" id="99"/>
+									<AutoCommandBar name="ИсторияГруппКоманднаяПанель" id="100"/>
+									<ExtendedTooltip name="ИсторияГруппРасширеннаяПодсказка" id="101"/>
+									<SearchStringAddition name="ИсторияГруппСтрокаПоиска" id="102">
+										<AdditionSource>
+											<Item>ИсторияГрупп</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ИсторияГруппСтрокаПоискаКонтекстноеМеню" id="103"/>
+										<ExtendedTooltip name="ИсторияГруппСтрокаПоискаРасширеннаяПодсказка" id="104"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ИсторияГруппСостояниеПросмотра" id="105">
+										<AdditionSource>
+											<Item>ИсторияГрупп</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ИсторияГруппСостояниеПросмотраКонтекстноеМеню" id="106"/>
+										<ExtendedTooltip name="ИсторияГруппСостояниеПросмотраРасширеннаяПодсказка" id="107"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ИсторияГруппУправлениеПоиском" id="108">
+										<AdditionSource>
+											<Item>ИсторияГрупп</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ИсторияГруппУправлениеПоискомКонтекстноеМеню" id="109"/>
+										<ExtendedTooltip name="ИсторияГруппУправлениеПоискомРасширеннаяПодсказка" id="110"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<LabelField name="ИсторияГруппГруппа" id="117">
+											<DataPath>ИсторияГрупп.Группа</DataPath>
+											<ContextMenu name="ИсторияГруппГруппаКонтекстноеМеню" id="118"/>
+											<ExtendedTooltip name="ИсторияГруппГруппаРасширеннаяПодсказка" id="119"/>
+										</LabelField>
+										<LabelField name="ИсторияГруппПериод" id="111">
+											<DataPath>ИсторияГрупп.Period</DataPath>
+											<ContextMenu name="ИсторияГруппПериодКонтекстноеМеню" id="112"/>
+											<ExtendedTooltip name="ИсторияГруппПериодРасширеннаяПодсказка" id="113"/>
+										</LabelField>
+										<CheckBoxField name="ИсторияГруппАктивен" id="114">
+											<DataPath>ИсторияГрупп.Активен</DataPath>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ИсторияГруппАктивенКонтекстноеМеню" id="115"/>
+											<ExtendedTooltip name="ИсторияГруппАктивенРасширеннаяПодсказка" id="116"/>
+										</CheckBoxField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.аэПользователиАД</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ИсторияИзменения" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>История изменения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	аэСостояниеПользователейАД.Период,
+	аэСостояниеПользователейАД.Реквизит,
+	аэСостояниеПользователейАД.Значение,
+	"Шапка" КАК Тип
+ИЗ
+	РегистрСведений.аэСостояниеПользователейАД КАК аэСостояниеПользователейАД
+ГДЕ
+	аэСостояниеПользователейАД.Пользователь = &amp;Пользователь</QueryText>
+				<MainTable>InformationRegister.аэСостояниеПользователейАД</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Тип</dcsset:field>
+							<dcsset:orderType>Desc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Реквизит.Наименование</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Период</dcsset:field>
+							<dcsset:orderType>Desc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Реквизит</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+					</dcsset:item>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ИсторияГрупп" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>История групп</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	аэСостояниеГруппПользователейАД.Период,
+	аэСостояниеГруппПользователейАД.Группа,
+	аэСостояниеГруппПользователейАД.Активен
+ИЗ
+	РегистрСведений.аэСостояниеГруппПользователейАД КАК аэСостояниеГруппПользователейАД
+ГДЕ
+	аэСостояниеГруппПользователейАД.Пользователь = &amp;Пользователь</QueryText>
+				<MainTable>InformationRegister.аэСостояниеГруппПользователейАД</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Группа.Наименование</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Период</dcsset:field>
+							<dcsset:orderType>Desc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Группа</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+					</dcsset:item>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+</Form>

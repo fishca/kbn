@@ -1,0 +1,45 @@
+﻿var scroller = {
+	goto: function(elementId){
+		var elementOffset = $(elementId).offset();
+		if (elementOffset==null) {return false;}
+		
+		var position = elementOffset.top;
+		window.scroll(0, position);
+		return false;
+	}
+};
+
+var visibler = {
+	todo: function(elementId){
+		var elementClick = $(elementId).attr('href');
+		if ($(elementClick).is(':visible')==true){
+			$(elementClick).hide(200);
+			$(elementId).text('показать');}
+		else {
+			$(elementClick).show(200);
+			$(elementId).text('скрыть');}
+		return false;
+	}
+};
+
+$(document).ready(function(){
+	$('a').click(function(){
+		var elementId = $(this).attr('id');
+		var elementClick = $(this).attr('href');
+		
+		if (elementId!=null) {
+			var firstChar=elementId.substr(0,7);
+			if (firstChar=='visible') {
+				visibler.todo(this);
+				return false;
+			}
+		}
+		
+		var firstChar=elementClick.substr(0,1);
+		if (firstChar=='#'){
+			scroller.goto(elementClick);
+			return false;
+		}
+	});
+	
+})

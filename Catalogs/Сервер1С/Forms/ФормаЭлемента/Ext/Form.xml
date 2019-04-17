@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Наименование" id="3">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoMarkIncomplete>true</AutoMarkIncomplete>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="23"/>
+		</InputField>
+		<InputField name="ПутьККонфигурационномуФайлу" id="5">
+			<DataPath>Объект.ПутьККонфигурационномуФайлу</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПутьККонфигурационномуФайлуКонтекстноеМеню" id="6"/>
+			<ExtendedTooltip name="ПутьККонфигурационномуФайлуРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<InputField name="ПутьКФайламЛоговТЖ" id="7">
+			<DataPath>Объект.ПутьКФайламЛоговТЖ</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПутьКФайламЛоговТЖКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ПутьКФайламЛоговТЖРасширеннаяПодсказка" id="25"/>
+		</InputField>
+		<InputField name="ПериодХраненияЛоговТехнологическогоЖурнала" id="9">
+			<DataPath>Объект.ПериодХраненияЛоговТехнологическогоЖурнала</DataPath>
+			<Visible>false</Visible>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПериодХраненияЛоговТехнологическогоЖурналаКонтекстноеМеню" id="10"/>
+			<ExtendedTooltip name="ПериодХраненияЛоговТехнологическогоЖурналаРасширеннаяПодсказка" id="26"/>
+		</InputField>
+		<CheckBoxField name="ВключитьМониторинг" id="11">
+			<DataPath>Объект.ВключитьМониторинг</DataPath>
+			<TitleLocation>Right</TitleLocation>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ВключитьМониторингКонтекстноеМеню" id="12"/>
+			<ExtendedTooltip name="ВключитьМониторингРасширеннаяПодсказка" id="27"/>
+		</CheckBoxField>
+		<UsualGroup name="ГруппаБазыДляМониторинга" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информационные  базы для офлайн мониторинга</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа базы для мониторинга</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>StrongSeparation</Representation>
+			<ExtendedTooltip name="ГруппаБазыДляМониторингаРасширеннаяПодсказка" id="28"/>
+			<ChildItems>
+				<Table name="ИнформационныеБазыДляМониторинга" id="13">
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>Объект.ИнформационныеБазыДляМониторинга</DataPath>
+					<SearchStringLocation>None</SearchStringLocation>
+					<ViewStatusLocation>None</ViewStatusLocation>
+					<SearchControlLocation>None</SearchControlLocation>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ИнформационныеБазыДляМониторингаКонтекстноеМеню" id="14"/>
+					<AutoCommandBar name="ИнформационныеБазыДляМониторингаКоманднаяПанель" id="15"/>
+					<ExtendedTooltip name="ИнформационныеБазыДляМониторингаРасширеннаяПодсказка" id="29"/>
+					<SearchStringAddition name="ИнформационныеБазыДляМониторингаСтрокаПоиска" id="30">
+						<AdditionSource>
+							<Item>ИнформационныеБазыДляМониторинга</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ИнформационныеБазыДляМониторингаСтрокаПоискаКонтекстноеМеню" id="31"/>
+						<ExtendedTooltip name="ИнформационныеБазыДляМониторингаСтрокаПоискаРасширеннаяПодсказка" id="32"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ИнформационныеБазыДляМониторингаСостояниеПросмотра" id="33">
+						<AdditionSource>
+							<Item>ИнформационныеБазыДляМониторинга</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ИнформационныеБазыДляМониторингаСостояниеПросмотраКонтекстноеМеню" id="34"/>
+						<ExtendedTooltip name="ИнформационныеБазыДляМониторингаСостояниеПросмотраРасширеннаяПодсказка" id="35"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ИнформационныеБазыДляМониторингаУправлениеПоиском" id="36">
+						<AdditionSource>
+							<Item>ИнформационныеБазыДляМониторинга</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ИнформационныеБазыДляМониторингаУправлениеПоискомКонтекстноеМеню" id="37"/>
+						<ExtendedTooltip name="ИнформационныеБазыДляМониторингаУправлениеПоискомРасширеннаяПодсказка" id="38"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="ИнформационныеБазыДляМониторингаНомерСтроки" id="16">
+							<DataPath>Объект.ИнформационныеБазыДляМониторинга.LineNumber</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ИнформационныеБазыДляМониторингаНомерСтрокиКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="ИнформационныеБазыДляМониторингаНомерСтрокиРасширеннаяПодсказка" id="39"/>
+						</LabelField>
+						<InputField name="ИнформационныеБазыДляМониторингаИмяБазы" id="18">
+							<DataPath>Объект.ИнформационныеБазыДляМониторинга.ИмяБазы</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ИнформационныеБазыДляМониторингаИмяБазыКонтекстноеМеню" id="19"/>
+							<ExtendedTooltip name="ИнформационныеБазыДляМониторингаИмяБазыРасширеннаяПодсказка" id="40"/>
+						</InputField>
+						<CheckBoxField name="ИнформационныеБазыДляМониторингаИспользоватьМониторинг" id="21">
+							<DataPath>Объект.ИнформационныеБазыДляМониторинга.ИспользоватьМониторинг</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ИнформационныеБазыДляМониторингаИспользоватьМониторингКонтекстноеМеню" id="22"/>
+							<ExtendedTooltip name="ИнформационныеБазыДляМониторингаИспользоватьМониторингРасширеннаяПодсказка" id="41"/>
+						</CheckBoxField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Сервер1С</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

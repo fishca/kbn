@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Rights xmlns="http://v8.1c.ru/8.2/roles" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="Rights" version="2.7">
+	<setForNewObjects>false</setForNewObjects>
+	<setForAttributesByDefault>true</setForAttributesByDefault>
+	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
+	<object>
+		<name>Configuration.УправлениеЗадачами</name>
+		<right>
+			<name>ThinClient</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>WebClient</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ThickClient</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>SaveUserData</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Output</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.узЗадачи</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>узЗадачи ГДЕ (узЗадачи.аэИнициатор.Пользователь = &amp;ТекущийПользователь
+			ИЛИ узЗадачи.аэПодразделение В
+				(ВЫБРАТЬ РАЗЛИЧНЫЕ
+					аэПодразделенияРуководители.Ссылка
+				ИЗ
+					Справочник.аэПодразделения.Руководители КАК аэПодразделенияРуководители
+				ГДЕ
+					аэПодразделенияРуководители.Пользователь = &amp;ТекущийПользователь))</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>узЗадачи ГДЕ (узЗадачи.аэИнициатор.Пользователь = &amp;ТекущийПользователь
+			ИЛИ узЗадачи.аэИнициатор.Пользователь.аэРуководитель = &amp;ТекущийПользователь
+			ИЛИ узЗадачи.ЭтоОсновнаяЗадача
+			ИЛИ узЗадачи.аэПодразделение В
+				(ВЫБРАТЬ РАЗЛИЧНЫЕ
+					аэПодразделенияРуководители.Ссылка
+				ИЗ
+					Справочник.аэПодразделения.Руководители КАК аэПодразделенияРуководители
+				ГДЕ
+					аэПодразделенияРуководители.Пользователь = &amp;ТекущийПользователь)
+			ИЛИ узЗадачи.Ссылка В
+				(ВЫБРАТЬ
+					узНаблюдателиЗаЗадачами.Задача
+				ИЗ
+					РегистрСведений.узНаблюдателиЗаЗадачами КАК узНаблюдателиЗаЗадачами
+				ГДЕ
+					узНаблюдателиЗаЗадачами.Пользователь = &amp;ТекущийПользователь))</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.аэПодразделения</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+</Rights>

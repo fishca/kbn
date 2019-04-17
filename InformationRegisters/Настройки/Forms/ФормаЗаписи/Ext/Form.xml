@@ -1,0 +1,657 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаРасширенныеНастройки" id="104">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.РасширенныеНастройки</CommandName>
+				<ExtendedTooltip name="ФормаРасширенныеНастройкиExtendedTooltip" id="121"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="ГруппаСтраницы" id="74">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаСтраницыExtendedTooltip" id="122"/>
+			<ChildItems>
+				<Page name="ГруппаУпрощенныеНастройки" id="93">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Упрощенные настройки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа упрощенные настройки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаУпрощенныеНастройкиExtendedTooltip" id="123"/>
+					<ChildItems>
+						<InputField name="Период1" id="96">
+							<DataPath>Запись.Period</DataPath>
+							<ContextMenu name="Период1КонтекстноеМеню" id="97"/>
+							<ExtendedTooltip name="Период1ExtendedTooltip" id="124"/>
+						</InputField>
+						<UsualGroup name="ГруппаИдентификатор" id="113">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа идентификатор</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа идентификатор</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаИдентификаторExtendedTooltip" id="125"/>
+							<ChildItems>
+								<InputField name="ИденификаторБазы1" id="94">
+									<DataPath>Запись.ИденификаторБазы</DataPath>
+									<ContextMenu name="ИденификаторБазы1КонтекстноеМеню" id="95"/>
+									<ExtendedTooltip name="ИденификаторБазы1ExtendedTooltip" id="126"/>
+								</InputField>
+								<Button name="ПолуччитьЗарегистрироватьИдентификатор" id="114">
+									<Type>UsualButton</Type>
+									<Enabled>false</Enabled>
+									<CommandName>Form.Command.ПолучитьЗарегистрироватьИдентификатор</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Выполнить регистрацию</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ПолуччитьЗарегистрироватьИдентификаторExtendedTooltip" id="127"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа2" id="98">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа2ExtendedTooltip" id="128"/>
+							<ChildItems>
+								<InputField name="ПутьККонфигурационномуФайлу1" id="99">
+									<DataPath>Запись.ПутьККонфигурационномуФайлу</DataPath>
+									<ChoiceButton>true</ChoiceButton>
+									<ChoiceListButton>true</ChoiceListButton>
+									<ContextMenu name="ПутьККонфигурационномуФайлу1КонтекстноеМеню" id="100"/>
+									<ExtendedTooltip name="ПутьККонфигурационномуФайлу1ExtendedTooltip" id="129"/>
+									<Events>
+										<Event name="StartChoice">ПутьККонфигурационномуФайлуНачалоВыбора</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="ПутьКФайламЛоговТЖ1" id="102">
+							<DataPath>Запись.ПутьКФайламЛоговТЖ</DataPath>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Любой пустой каталог с полными правами для всех пользователей (Все, Everyone)</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ChoiceButton>true</ChoiceButton>
+							<ContextMenu name="ПутьКФайламЛоговТЖ1КонтекстноеМеню" id="103"/>
+							<ExtendedTooltip name="ПутьКФайламЛоговТЖ1ExtendedTooltip" id="130"/>
+							<Events>
+								<Event name="StartChoice">ПутьКФайламЛоговТЖНачалоВыбора</Event>
+							</Events>
+						</InputField>
+						<UsualGroup name="ГруппаАнализДлительныхЗапросов" id="109">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Анализ длительных запросов</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа анализ длительных запросов</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<ExtendedTooltip name="ГруппаАнализДлительныхЗапросовExtendedTooltip" id="131"/>
+							<ChildItems>
+								<UsualGroup name="Группа5" id="115">
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа5ExtendedTooltip" id="132"/>
+									<ChildItems>
+										<InputField name="ДлительностьЗапросовПорог1_1" id="107">
+											<DataPath>Запись.ДлительностьЗапросовПорог1</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Минимальная длительность запросов</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ДлительностьЗапросовПорог1_1КонтекстноеМеню" id="108"/>
+											<ExtendedTooltip name="ДлительностьЗапросовПорог1_1ExtendedTooltip" id="133"/>
+										</InputField>
+										<LabelDecoration name="ДекорацияИнформацияДляПорога" id="116">
+											<TextColor>style:FieldSelectionBackColor</TextColor>
+											<Font ref="sys:DefaultGUIFont" bold="false" italic="true" underline="false" strikeout="false" kind="WindowsFont"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Чем выше порог, тем меньше нагрузка</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ДекорацияИнформацияДляПорогаКонтекстноеМеню" id="117"/>
+											<ExtendedTooltip name="ДекорацияИнформацияДляПорогаExtendedTooltip" id="134"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Группа6" id="118">
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа6ExtendedTooltip" id="135"/>
+									<ChildItems>
+										<CheckBoxField name="ВключатьПланыЗапросов1" id="105">
+											<DataPath>Запись.ВключатьПланыЗапросов</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ВключатьПланыЗапросов1КонтекстноеМеню" id="106"/>
+											<ExtendedTooltip name="ВключатьПланыЗапросов1ExtendedTooltip" id="136"/>
+										</CheckBoxField>
+										<LabelDecoration name="Декорация1" id="119">
+											<TextColor>style:FieldSelectionBackColor</TextColor>
+											<Font ref="sys:DefaultGUIFont" bold="false" italic="true" underline="false" strikeout="false" kind="WindowsFont"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Сбор планов увеличивает нагрузку</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация1КонтекстноеМеню" id="120"/>
+											<ExtendedTooltip name="Декорация1ExtendedTooltip" id="137"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаОбщиеНастройки" id="73">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Общие настройки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа общие настройки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаОбщиеНастройкиExtendedTooltip" id="138"/>
+					<ChildItems>
+						<InputField name="Период" id="1">
+							<DataPath>Запись.Period</DataPath>
+							<ContextMenu name="ПериодКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="ПериодExtendedTooltip" id="139"/>
+						</InputField>
+						<InputField name="ИденификаторБазы" id="3">
+							<DataPath>Запись.ИденификаторБазы</DataPath>
+							<ContextMenu name="ИденификаторБазыКонтекстноеМеню" id="4"/>
+							<ExtendedTooltip name="ИденификаторБазыExtendedTooltip" id="140"/>
+						</InputField>
+						<UsualGroup name="Группа1" id="70">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа1ExtendedTooltip" id="141"/>
+							<ChildItems>
+								<InputField name="ПутьККонфигурационномуФайлу" id="5">
+									<DataPath>Запись.ПутьККонфигурационномуФайлу</DataPath>
+									<ChoiceButton>true</ChoiceButton>
+									<ChoiceListButton>true</ChoiceListButton>
+									<ContextMenu name="ПутьККонфигурационномуФайлуКонтекстноеМеню" id="6"/>
+									<ExtendedTooltip name="ПутьККонфигурационномуФайлуExtendedTooltip" id="142"/>
+									<Events>
+										<Event name="StartChoice">ПутьККонфигурационномуФайлуНачалоВыбора</Event>
+									</Events>
+								</InputField>
+								<Button name="ВыполнитьПоискПутей" id="72">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ВыполнитьПоискПутей</CommandName>
+									<ExtendedTooltip name="ВыполнитьПоискПутейExtendedTooltip" id="143"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="ПутьКФайламЛоговТЖ" id="7">
+							<DataPath>Запись.ПутьКФайламЛоговТЖ</DataPath>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Любой пустой каталог с полными правами для всех пользователей (Все, Everyone)</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ChoiceButton>true</ChoiceButton>
+							<ContextMenu name="ПутьКФайламЛоговТЖКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="ПутьКФайламЛоговТЖExtendedTooltip" id="144"/>
+							<Events>
+								<Event name="StartChoice">ПутьКФайламЛоговТЖНачалоВыбора</Event>
+							</Events>
+						</InputField>
+						<InputField name="ПериодХраненияЛоговТехнологическогоЖурнала" id="15">
+							<DataPath>Запись.ПериодХраненияЛоговТехнологическогоЖурнала</DataPath>
+							<ContextMenu name="ПериодХраненияЛоговТехнологическогоЖурналаКонтекстноеМеню" id="16"/>
+							<ExtendedTooltip name="ПериодХраненияЛоговТехнологическогоЖурналаExtendedTooltip" id="145"/>
+						</InputField>
+						<InputField name="КоличествоПотоковДляОбработкиЛогов" id="27">
+							<DataPath>Запись.КоличествоПотоковДляОбработкиЛогов</DataPath>
+							<ContextMenu name="КоличествоПотоковДляОбработкиЛоговКонтекстноеМеню" id="28"/>
+							<ExtendedTooltip name="КоличествоПотоковДляОбработкиЛоговExtendedTooltip" id="146"/>
+						</InputField>
+						<CheckBoxField name="ЗагружатьЛогиВПамятьДляОбработки" id="39">
+							<DataPath>Запись.ЗагружатьЛогиВПамятьДляОбработки</DataPath>
+							<Visible>false</Visible>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ЗагружатьЛогиВПамятьДляОбработкиКонтекстноеМеню" id="40"/>
+							<ExtendedTooltip name="ЗагружатьЛогиВПамятьДляОбработкиExtendedTooltip" id="147"/>
+						</CheckBoxField>
+						<InputField name="НомерКлиентскойЧасти" id="45">
+							<DataPath>Запись.НомерКлиентскойЧасти</DataPath>
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Порядковый номер сервиса</v8:content>
+								</v8:item>
+							</Title>
+							<ChoiceButton>true</ChoiceButton>
+							<ContextMenu name="НомерКлиентскойЧастиКонтекстноеМеню" id="46"/>
+							<ExtendedTooltip name="НомерКлиентскойЧастиExtendedTooltip" id="148"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаАнализДолгихЗапросов" id="75">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Анализ долгих запросов</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа анализ долгих запросов</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаАнализДолгихЗапросовExtendedTooltip" id="149"/>
+					<ChildItems>
+						<InputField name="ТипСУБД" id="35">
+							<DataPath>Запись.ТипСУБД</DataPath>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="ТипСУБДКонтекстноеМеню" id="36"/>
+							<ExtendedTooltip name="ТипСУБДExtendedTooltip" id="150"/>
+							<Events>
+								<Event name="OnChange">ТипСУБДПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ВерсияПлатформы1С" id="41">
+							<DataPath>Запись.ВерсияПлатформы1С</DataPath>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="ВерсияПлатформы1СКонтекстноеМеню" id="42"/>
+							<ExtendedTooltip name="ВерсияПлатформы1СExtendedTooltip" id="151"/>
+						</InputField>
+						<CheckBoxField name="ОперативныйРежимПолученияИнформацииОЗапросах" id="37">
+							<DataPath>Запись.ОперативныйРежимПолученияИнформацииОЗапросах</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ОперативныйРежимПолученияИнформацииОЗапросахКонтекстноеМеню" id="38"/>
+							<ExtendedTooltip name="ОперативныйРежимПолученияИнформацииОЗапросахExtendedTooltip" id="152"/>
+							<Events>
+								<Event name="OnChange">ОперативныйРежимПолученияИнформацииОЗапросахПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<UsualGroup name="Группа5ПорогиДлительности" id="112">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пороги длительности</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа5 пороги длительности</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<ExtendedTooltip name="Группа5ПорогиДлительностиExtendedTooltip" id="153"/>
+							<ChildItems>
+								<InputField name="ДлительностьЗапросовПорог1" id="9">
+									<DataPath>Запись.ДлительностьЗапросовПорог1</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Порог 1 (секунд)</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДлительностьЗапросовПорог1КонтекстноеМеню" id="10"/>
+									<ExtendedTooltip name="ДлительностьЗапросовПорог1ExtendedTooltip" id="154"/>
+								</InputField>
+								<InputField name="ДлительностьЗапросовПорог2" id="11">
+									<DataPath>Запись.ДлительностьЗапросовПорог2</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Порог 2 (секунд)</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДлительностьЗапросовПорог2КонтекстноеМеню" id="12"/>
+									<ExtendedTooltip name="ДлительностьЗапросовПорог2ExtendedTooltip" id="155"/>
+								</InputField>
+								<InputField name="ДлительностьЗапросовПорог3" id="13">
+									<DataPath>Запись.ДлительностьЗапросовПорог3</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Порог 3 (секунд)</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДлительностьЗапросовПорог3КонтекстноеМеню" id="14"/>
+									<ExtendedTooltip name="ДлительностьЗапросовПорог3ExtendedTooltip" id="156"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="МетодОбработкиПороговДлительности" id="23">
+							<DataPath>Запись.МетодОбработкиПороговДлительности</DataPath>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="МетодОбработкиПороговДлительностиКонтекстноеМеню" id="24"/>
+							<ExtendedTooltip name="МетодОбработкиПороговДлительностиExtendedTooltip" id="157"/>
+						</InputField>
+						<CheckBoxField name="ВключатьПланыЗапросов" id="25">
+							<DataPath>Запись.ВключатьПланыЗапросов</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ВключатьПланыЗапросовКонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="ВключатьПланыЗапросовExtendedTooltip" id="158"/>
+						</CheckBoxField>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаСобытияТЖ" id="76">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>События технологического журнала</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа события ТЖ</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаСобытияТЖExtendedTooltip" id="159"/>
+					<ChildItems>
+						<CheckBoxField name="ИспользуетсяОфлайнМониторинг" id="78">
+							<DataPath>Запись.ИспользуетсяОфлайнМониторинг</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ИспользуетсяОфлайнМониторингКонтекстноеМеню" id="79"/>
+							<ExtendedTooltip name="ИспользуетсяОфлайнМониторингExtendedTooltip" id="160"/>
+						</CheckBoxField>
+						<InputField name="НастройкаОфлайнМониторинга" id="80">
+							<DataPath>Запись.НастройкаОфлайнМониторинга</DataPath>
+							<ContextMenu name="НастройкаОфлайнМониторингаКонтекстноеМеню" id="81"/>
+							<ExtendedTooltip name="НастройкаОфлайнМониторингаExtendedTooltip" id="161"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="ПараметрыПодключенияКВэбСервисам" id="77">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметры подключения к вэб-сервисам</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметры подключения к вэб сервисам</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ПараметрыПодключенияКВэбСервисамExtendedTooltip" id="162"/>
+					<ChildItems>
+						<CheckBoxField name="ФормироватьПочтовыеФайлы" id="29">
+							<DataPath>Запись.ФормироватьПочтовыеФайлы</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отправка данных в сервис через электронную почту</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ФормироватьПочтовыеФайлыКонтекстноеМеню" id="30"/>
+							<ExtendedTooltip name="ФормироватьПочтовыеФайлыExtendedTooltip" id="163"/>
+							<Events>
+								<Event name="OnChange">ФормироватьПочтовыеФайлыПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<InputField name="ЭлектроннаяПочтаСервиса" id="33">
+							<DataPath>Запись.ЭлектроннаяПочтаСервиса</DataPath>
+							<ContextMenu name="ЭлектроннаяПочтаСервисаКонтекстноеМеню" id="34"/>
+							<ExtendedTooltip name="ЭлектроннаяПочтаСервисаExtendedTooltip" id="164"/>
+						</InputField>
+						<InputField name="ПутьКФайламПочтовыхВложений" id="31">
+							<DataPath>Запись.ПутьКФайламПочтовыхВложений</DataPath>
+							<ContextMenu name="ПутьКФайламПочтовыхВложенийКонтекстноеМеню" id="32"/>
+							<ExtendedTooltip name="ПутьКФайламПочтовыхВложенийExtendedTooltip" id="165"/>
+						</InputField>
+						<Pages name="ГруппаПараметрыПодключения" id="82">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа параметры подключения</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа параметры подключения</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаПараметрыПодключенияExtendedTooltip" id="166"/>
+							<ChildItems>
+								<Page name="ГруппаВэбСервисАнализаДолгихЗапросов" id="83">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Анализ долгих запросов</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа вэб сервис анализа долгих запросов</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ГруппаВэбСервисАнализаДолгихЗапросовExtendedTooltip" id="167"/>
+									<ChildItems>
+										<InputField name="WSDL_УдаленноеПодключение" id="17">
+											<DataPath>Запись.WSDL_УдаленноеПодключение</DataPath>
+											<ContextMenu name="WSDL_УдаленноеПодключениеКонтекстноеМеню" id="18"/>
+											<ExtendedTooltip name="WSDL_УдаленноеПодключениеExtendedTooltip" id="168"/>
+										</InputField>
+										<InputField name="WSDL_УдаленноеПодключениеРезерв" id="43">
+											<DataPath>Запись.WSDL_УдаленноеПодключениеРезерв</DataPath>
+											<ContextMenu name="WSDL_УдаленноеПодключениеРезервКонтекстноеМеню" id="44"/>
+											<ExtendedTooltip name="WSDL_УдаленноеПодключениеРезервExtendedTooltip" id="169"/>
+										</InputField>
+										<UsualGroup name="Группа3" id="110">
+											<Group>Horizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа3ExtendedTooltip" id="170"/>
+											<ChildItems>
+												<InputField name="WSDL_Пользователь" id="19">
+													<DataPath>Запись.WSDL_Пользователь</DataPath>
+													<ContextMenu name="WSDL_ПользовательКонтекстноеМеню" id="20"/>
+													<ExtendedTooltip name="WSDL_ПользовательExtendedTooltip" id="171"/>
+												</InputField>
+												<InputField name="WSDL_Пароль" id="21">
+													<DataPath>Запись.WSDL_Пароль</DataPath>
+													<ContextMenu name="WSDL_ПарольКонтекстноеМеню" id="22"/>
+													<ExtendedTooltip name="WSDL_ПарольExtendedTooltip" id="172"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</Page>
+								<Page name="ГруппаВэбСервисСобытийТехнологическогоЖурнала" id="84">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>События технологического журнала</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа вэб сервис событий технологического журнала</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ГруппаВэбСервисСобытийТехнологическогоЖурналаExtendedTooltip" id="173"/>
+									<ChildItems>
+										<InputField name="WSDL_Status_УдаленноеПодключение" id="85">
+											<DataPath>Запись.WSDL_Status_УдаленноеПодключение</DataPath>
+											<ContextMenu name="WSDL_Status_УдаленноеПодключениеКонтекстноеМеню" id="86"/>
+											<ExtendedTooltip name="WSDL_Status_УдаленноеПодключениеExtendedTooltip" id="174"/>
+										</InputField>
+										<InputField name="WSDL_Status_УдаленноеПодключениеРезерв" id="87">
+											<DataPath>Запись.WSDL_Status_УдаленноеПодключениеРезерв</DataPath>
+											<ContextMenu name="WSDL_Status_УдаленноеПодключениеРезервКонтекстноеМеню" id="88"/>
+											<ExtendedTooltip name="WSDL_Status_УдаленноеПодключениеРезервExtendedTooltip" id="175"/>
+										</InputField>
+										<UsualGroup name="Группа4" id="111">
+											<Group>Horizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа4ExtendedTooltip" id="176"/>
+											<ChildItems>
+												<InputField name="WSDL_Status_Пользователь" id="89">
+													<DataPath>Запись.WSDL_Status_Пользователь</DataPath>
+													<ContextMenu name="WSDL_Status_ПользовательКонтекстноеМеню" id="90"/>
+													<ExtendedTooltip name="WSDL_Status_ПользовательExtendedTooltip" id="177"/>
+												</InputField>
+												<InputField name="WSDL_Status_Пароль" id="91">
+													<DataPath>Запись.WSDL_Status_Пароль</DataPath>
+													<ContextMenu name="WSDL_Status_ПарольКонтекстноеМеню" id="92"/>
+													<ExtendedTooltip name="WSDL_Status_ПарольExtendedTooltip" id="178"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.Настройки</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="РежимРасширенныхНастроек" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим расширенных настроек</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ВыполнитьПоискПутей" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить автоматически</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить поиск путей</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьПоискПутей</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="РасширенныеНастройки" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расширенные настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расширенные настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>РасширенныеНастройки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПолучитьЗарегистрироватьИдентификатор" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить/зарегистрировать идентификатор</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Зарегистрировать указанный или получить новый идентификатор в сервисах Gilev.ru</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьЗарегистрироватьИдентификатор</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>
